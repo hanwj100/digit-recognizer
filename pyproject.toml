@@ -6,7 +6,7 @@ authors = ["woo <hanwj100@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.11.5"
+python = "^3.11"
 fastai = "^2.7.18"
 jupyter = "^1.1.1"
 

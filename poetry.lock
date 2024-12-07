@@ -2445,7 +2445,10 @@ files = [
 ]
 
 [package.dependencies]
-numpy = {version = ">=1.23.2", markers = "python_version == \"3.11\""}
+numpy = [
+    {version = ">=1.23.2", markers = "python_version == \"3.11\""},
+    {version = ">=1.26.0", markers = "python_version >= \"3.12\""},
+]
 python-dateutil = ">=2.8.2"
 pytz = ">=2020.1"
 tzdata = ">=2022.7"
@@ -3936,6 +3939,7 @@ nvidia-cusparse-cu12 = {version = "12.3.1.170", markers = "platform_system == \"
 nvidia-nccl-cu12 = {version = "2.21.5", markers = "platform_system == \"Linux\" and platform_machine == \"x86_64\""}
 nvidia-nvjitlink-cu12 = {version = "12.4.127", markers = "platform_system == \"Linux\" and platform_machine == \"x86_64\""}
 nvidia-nvtx-cu12 = {version = "12.4.127", markers = "platform_system == \"Linux\" and platform_machine == \"x86_64\""}
+setuptools = {version = "*", markers = "python_version >= \"3.12\""}
 sympy = {version = "1.13.1", markers = "python_version >= \"3.9\""}
 triton = {version = "3.1.0", markers = "platform_system == \"Linux\" and platform_machine == \"x86_64\" and python_version < \"3.13\""}
 typing-extensions = ">=4.8.0"
@@ -4309,5 +4313,5 @@ files = [
 
 [metadata]
 lock-version = "2.0"
-python-versions = "3.11.5"
-content-hash = "06cbb02967c01cd09f496f392d17ff90f1b0b02dc21d481f713e5a79bea6f238"
+python-versions = "^3.11"
+content-hash = "00e211a255aa8e782b084ccd7a130756d962280a381dbc9fbc72f9939e74b09f"
